@@ -1,6 +1,7 @@
 namespace ClosetFit.Infrastructure.Repositories;
 public class CategoriaRepository(AppDbContext _context) : ICategoriaRepository
 {
+
     #region </Create>
         public async Task<ResponseModel<CategoriaEntity>?> CreateAsync(CategoriaEntity entity)
         {
@@ -35,7 +36,7 @@ public class CategoriaRepository(AppDbContext _context) : ICategoriaRepository
                 {
                     return new ResponseModel<CategoriaEntity>(null, 400, "ID não pode ser menor ou igual a zero");
                 }
-                var categoria = await _context.Categorias.AsNoTracking().FirstOrDefaultAsync(x => x.Id == entityId);
+                var categoria = await _context.Categorias.FindAsync(entityId);
                 if (categoria == null)
                 {
                     return new ResponseModel<CategoriaEntity>(null, 404, $"Categoria com ID {entityId}, não encontrado.");
@@ -134,7 +135,7 @@ public class CategoriaRepository(AppDbContext _context) : ICategoriaRepository
                 {
                     return new ResponseModel<CategoriaEntity>(null, 400, "Parêmetro não deve ser vazio.");
                 }
-                var exist = await _context.Categorias.FindAsync(entity);
+                var exist = await _context.Categorias.FindAsync(entity.Id);
                 if(exist == null)
                 {
                     return new ResponseModel<CategoriaEntity>(null, 404, $"Categoria com ID {entity.Id}, não encontrado.");
@@ -150,4 +151,5 @@ public class CategoriaRepository(AppDbContext _context) : ICategoriaRepository
         }
 
     #endregion
+
 }

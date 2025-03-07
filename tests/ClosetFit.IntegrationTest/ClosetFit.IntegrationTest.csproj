@@ -19,6 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../src/backend/ClosetFit.Domain/ClosetFit.Domain.csproj" />
+    <ProjectReference Include="../../src/backend/ClosetFit.Infrastructure/ClosetFit.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 

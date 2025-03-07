@@ -1,7 +1,7 @@
 namespace ClosetFit.Domain.Response;
 public class ResponseModel<TData>
 {
-    private int _Code = 200;
+    public int _Code = 200;
     public string? Message { get; set; }
     public TData? Data { get; set; }
     
