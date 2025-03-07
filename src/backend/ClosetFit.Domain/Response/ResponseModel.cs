@@ -4,6 +4,8 @@ public class ResponseModel<TData>
     private int _Code = 200;
     public string? Message { get; set; }
     public TData? Data { get; set; }
+    
+    [JsonIgnore]
     public bool IsSuccess => _Code is >= 200 and <= 299;
 
     [JsonConstructor]

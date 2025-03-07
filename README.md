@@ -35,9 +35,10 @@ A estrutura do projeto segue uma organização modular e de fácil manutenção:
 │   ├── 📁 frontend/                    # 🖥️ Código do frontend
 │   │   ├── 📁 ClosetFit.Web/             # 🎨 Interface do usuário (Blazor)
 │   │
-├── 📂 tests/                          # 🧪 Projetos de testes
-│   ├── 📁 ClosetFit.UnitTest/           # 🔍 Testes de unidade (isolados e rápidos)
-│   ├── 📁 ClosetFit.IntegrationTest/    # 🔗 Testes de integração (banco de dados em memória, API)
+├── 📂 tests/                          # 🖥️ Código de testes
+│   ├── 📁 ClosetFit.Test/s             # 🧪 Projetos de testes
+│       ├── 📁 IntegrationTest/             # 🔍 Testes de unidade (isolados e rápidos)
+│       ├── 📁 Unityest/                    # 🔗 Testes de integração (banco de dados em memória, API)
 │
 ├── 📄 .gitignore                      # 🚫 Arquivo para ignorar arquivos desnecessários no Git
 ├── 📜 LICENSE                         # 📜 Licença do projeto
