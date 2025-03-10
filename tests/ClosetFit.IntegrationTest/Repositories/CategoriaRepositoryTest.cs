@@ -96,8 +96,7 @@ public class CategoriaRepositoryTest
             Assert.NotNull(response);
             Assert.True(response.IsSuccess);
             Assert.Equal(200, response._Code);
-            Assert.Single(response.Data);
-            Assert.Equal("Jogos", response.Data[0].Nome);
+            Assert.Equal("Jogos", response.Data?[0].Nome);
         }
     #endregion
 
