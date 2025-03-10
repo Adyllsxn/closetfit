@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../ClosetFit.Application/ClosetFit.Application.csproj" />
     <ProjectReference Include="../ClosetFit.Domain/ClosetFit.Domain.csproj" />
     <ProjectReference Include="../ClosetFit.Infrastructure/ClosetFit.Infrastructure.csproj" />
   </ItemGroup>

@@ -5,4 +5,8 @@ public static class CorsDI
     {
         
     }
+    public static void UseCorsDI (this WebApplication app)
+    {
+
+    }
 }

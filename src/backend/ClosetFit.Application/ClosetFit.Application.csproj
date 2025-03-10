@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../ClosetFit.Domain/ClosetFit.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
