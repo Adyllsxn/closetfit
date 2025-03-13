@@ -19,3 +19,9 @@
     global using ClosetFit.Ioc.Configurations;
     global using ClosetFit.Ioc.DI;
 #endregion
+
+#region </Application>
+    global using ClosetFit.Application.UseCases.CategoriaUseCase;
+    global using ClosetFit.Application.Interfaces;
+    global using ClosetFit.Application.Services;
+#endregion
